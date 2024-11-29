@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "yarn install --frozen-lockfile && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "yarn build && wrangler publish"
+    "preview": "vite preview"
+  
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.3.4",
